@@ -8,6 +8,10 @@ var Examples = require('Examples');
 var WeatherForm = require('WeatherForm');
 var WeatherForm = require('WeatherMessage');
 
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
